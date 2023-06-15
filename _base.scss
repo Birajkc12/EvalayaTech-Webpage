@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader&family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Newsreader", serif;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: black;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+section.content {
+  margin: 80px 0;
+}
+section:nth-child(even) {
+  background-color: #f2f2f2; /* grey color */
+  padding: 80px 0;
+}
+
+section:nth-child(odd) {
+  background-color: #fff; /* white color */
+  padding: 80px 0;
+}
+section.last {
+  margin: 0;
+}

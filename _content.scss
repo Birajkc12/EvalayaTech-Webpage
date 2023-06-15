@@ -1,0 +1,49 @@
+section{
+   .slide{
+    .carousel-inner{
+        .bgImage{
+            height: 80vh;
+            background-size: cover;
+            background-image: url("./pexels-yogendra-singh-731504.jpg");
+        }
+            
+        } }
+   }
+   .container{
+    .row{
+        .form{
+            input,textarea{
+                padding: 10px;
+            }
+            .my-btn:hover{
+                background-color: #007bff;
+                border-color: #007bff;
+                
+            }
+        }
+        .reSize{
+            img{
+                height: 500px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .card{
+            h2{
+                font-size: 1.3rem;
+            }
+        }
+        
+    }
+    .custom{
+        li{
+            list-style: none;
+            background-image: url("./love-removebg-preview.png");
+            background-repeat: no-repeat;
+            background-size: 30px;
+            padding-left: 50px;
+        }
+       
+      
+    }
+   }

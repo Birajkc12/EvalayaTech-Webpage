@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader&family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Newsreader", serif;
+  font-family: "Poppins", sans-serif;
+}
+
+header li {
+  list-style: none;
+}
+header li a {
+  text-decoration: none;
+  color: black;
+}
+header li a:hover {
+  text-decoration: underline;
+}
+
+section.content {
+  margin: 80px 0;
+}
+
+section:nth-child(even) {
+  background-color: #f2f2f2; /* grey color */
+  padding: 80px 0;
+}
+
+section:nth-child(odd) {
+  background-color: #fff; /* white color */
+  padding: 80px 0;
+}
+
+section.last {
+  margin: 0;
+}
+
+header {
+  height: 20vh;
+}
+header .navigation {
+  background-color: #162a4a;
+  color: #fff;
+}
+header .navigation .ctd {
+  height: 8vh;
+}
+header .navigation .ctd ul {
+  padding: 0;
+  margin: 0;
+}
+header .navigation .ctd ul li a {
+  color: #fff;
+}
+header .navg {
+  height: 12vh;
+}
+
+@media (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
+section .slide .carousel-inner .bgImage {
+  height: 80vh;
+  background-size: cover;
+  background-image: url("./pexels-yogendra-singh-731504.jpg");
+}
+
+.container .row .form input, .container .row .form textarea {
+  padding: 10px;
+}
+.container .row .form .my-btn:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.container .row .reSize img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+.container .row .card h2 {
+  font-size: 1.3rem;
+}
+.container .custom li {
+  list-style: none;
+  background-image: url("./love-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding-left: 50px;
+}
+
+footer {
+  background-color: #162a4a;
+  color: #fff;
+}
+
+.slider .bgImage .carousel_caption {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 520px;
+}
+.slider .bgImage .carousel_caption h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #ffffff;
+}
+.slider .bgImage .carousel_caption p {
+  color: #fff;
+  font-size: 1rem;
+}
+@media (max-width: 767px) {
+  .slider .bgImage .carousel_caption h2 {
+    font-size: 1.5rem;
+  }
+  .slider .bgImage .carousel_caption p {
+    font-size: 0.5rem;
+  }
+}
+.slider .bgImage .carousel_caption .btn {
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .slider .bgImage .carousel_caption {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 250px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

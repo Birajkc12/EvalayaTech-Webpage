@@ -1,0 +1,28 @@
+header {
+  height: 20vh;
+  .navigation {
+    background-color: #162a4a;
+    color: #fff;
+    .ctd {
+      // background-color: bisque;
+      height: 8vh;
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .navg {
+    height: 12vh;
+  }
+}
+@media (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
