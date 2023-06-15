@@ -96,6 +96,51 @@ footer {
   color: #fff;
 }
 
+main .abt {
+  height: 100vh;
+  background: url(./about.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .abt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+}
+main .abt .abt-content {
+  position: relative;
+  line-height: 1.5em;
+  letter-spacing: 0.01em;
+  margin: 0 10rem;
+  color: #fff;
+}
+main .abt .abt-content h2 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: calc(3.6vw + 1rem);
+}
+main .accordion {
+  background-color: #fff;
+}
+main .accordion .accordion-title {
+  text-align: center;
+}
+main .accordion .accordion-title h3 {
+  color: hsl(140.7692307692, 13.1313131313%, 61.176%);
+  line-height: 1.2012;
+  font-size: calc(2.28vw + 1rem);
+}
+
 .slider .bgImage .carousel_caption {
   position: absolute;
   top: 20%;
