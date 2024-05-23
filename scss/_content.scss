@@ -5,7 +5,7 @@ section {
         position: relative;
         height: 80vh;
         background-size: cover;
-        background-image: url("./assets/caraouselImage1.jpeg");
+        background-image: url("../assets/caraouselImage1.jpeg");
         &::before {
           content: "";
           position: absolute;

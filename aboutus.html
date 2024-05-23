@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Evalaya Tech offers innovative IT solutions with a personal touch. Our experts ensure seamless operations for your business."
+    />
+    <meta
+      name="keywords"
+      content="IT solutions, IT consulting, web development, mobile app development, SEO, digital marketing"
+    />
+    <title>Evalaya Tech</title>
+    <link rel="stylesheet" href="./scss/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,65 +24,84 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- AOS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
+    <header data-aos="fade-down" data-aos-duration="1500">
+      <div class="navigation">
+        <nav
+          class="container-lg d-flex justify-content-between align-items-center ctd"
+        >
+          <ul
+            class="d-flex justify-content-between gap-4 align-items-center m-0 p-0"
+          >
+            <li class="d-flex gap-2">
+              <i class="bi bi-envelope"></i>
+              <a href="">contact@evalaya.com</a>
+            </li>
+            <li class="d-flex gap-2">
+              <i class="bi bi-telephone"></i>
+              <a href="">981-4159830</a>
+            </li>
+          </ul>
+
+          <div class="socialMedia">
+            <ul
+              class="d-flex justify-content-between gap-3 social-icons align-items-center m-0 p-0"
+            >
+              <li>
+                <a href="https://www.facebook.com/evalayatech" target="_blank"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-google"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="bi bi-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <nav class="navbar navbar-expand-lg container navg">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"
-            ><img src="./assets/logo.png" alt="Evalaya Tech Logo"
+            ><img src="./assets/logo.png" alt="" style="overflow: hidden"
           /></a>
+          <!-- Added `me-5` class to create space between the brand and the links -->
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown"
-            aria-expanded="false"
+            aria-expanded="true"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto gap-2">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
+                <a class="nav-link" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./aboutus.html">About Us</a>
+                <a class="nav-link active" href="./aboutus.html">About Us</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Services</a
-                >
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li><a class="dropdown-item" href="#">IT Consulting</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Web Design & Development</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Mobile App Development</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >SEO & Digital Marketing</a
-                    >
-                  </li>
-                  <li><a class="dropdown-item" href="#">Others</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Our Works</a>
@@ -95,14 +122,19 @@
       <section class="abt">
         <div class="abt-content">
           <h2>
-            We aspire to provide you the care you deserve, not the care you are
-            used to.
+            We aspire to provide you with the tech solutions you deserve, not
+            the ones you're used to. We're Redefining IT Services
           </h2>
         </div>
       </section>
       <section class="container accordion">
         <div class="accordion-title">
-          <h3>We're Redefining Primary Care</h3>
+          <h3>What is Evalaya Tech?</h3>
+          <p>
+            Evalaya Tech is a forward-thinking IT solutions provider, dedicated
+            to delivering innovative and personalized technology services to
+            businesses of all sizes.
+          </p>
         </div>
         <div class="accordion accordion-flush mx-5" id="accordionFlushExample">
           <div class="accordion-item">
@@ -115,7 +147,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                What is Direct Primary Care?
+                Do I Still Need Traditional IT Services?
               </button>
             </h2>
             <div
@@ -124,13 +156,9 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Direct Primary Care (DPC) is a new healthcare model recognized
-                by the Affordable Care Act that allows consumers to have direct
-                and unrestricted access to their primary care provider (PCP).
-                Instead of paying for clinical services via an insurance
-                company, patients who are members of a DPC pay their doctor
-                directly on a monthly, quarterly or annual basis. Learn more
-                from DPC Nation by clicking here
+                Evalaya Tech enhances and often replaces traditional IT services
+                by offering more flexible, cost-effective, and comprehensive
+                solutions that adapt to your evolving needs.
               </div>
             </div>
           </div>
@@ -144,7 +172,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
               >
-                Advantages of Direct Primary Care
+                Advantages of Choosing Evalaya Tech
               </button>
             </h2>
             <div
@@ -155,14 +183,26 @@
               <div class="accordion-body">
                 <ol>
                   <li>
-                    Consumers get more time with their primary care physician
+                    Personalized Service: We tailor our IT solutions to meet the
+                    specific needs of your business, ensuring you get the most
+                    out of your technology investments.
                   </li>
-                  <li>Memberships are affordable</li>
-                  <li>Physician access is unlimited</li>
-                  <li>Pricing is Transparent and Up-Front</li>
+                  <li>
+                    Cutting-Edge Technology: Our team stays ahead of the curve
+                    with the latest advancements in IT to provide you with
+                    state-of-the-art solutions.
+                  </li>
+                  <li>
+                    Proactive Support: We focus on preventing issues before they
+                    arise, saving you time and money while keeping your
+                    operations running smoothly.
+                  </li>
+                  <li>
+                    Scalable Solutions: Whether you're a small startup or a
+                    large enterprise, our solutions are designed to grow with
+                    your business.
+                  </li>
                 </ol>
-
-                Learn More <a href="">Here</a>
               </div>
             </div>
           </div>
@@ -176,7 +216,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
               >
-                Do I Still Need Insurance?
+                What is Managed IT Services?
               </button>
             </h2>
             <div
@@ -185,9 +225,9 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Although we do not accept insurance, we believe that insurance
-                is important in the event of surgeries, hospitalizations or
-                severe illnesses.
+                Managed IT services from Evalaya Tech include monitoring,
+                maintaining, and optimizing your IT infrastructure, allowing you
+                to focus on your core business activities.
               </div>
             </div>
           </div>
@@ -201,7 +241,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseFour"
               >
-                What is Internal Medicine?
+                Do You Support Small Businesses?
               </button>
             </h2>
             <div
@@ -210,11 +250,9 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Internal Medicine is the medical specialty that focuses on the
-                prevention, diagnosis, and treatment of adult disease. Dr.
-                McCormack provides preventative care, treats acute illness, and
-                manages chronic diseases. He is board certified in both children
-                and adults.
+                Absolutely! We provide tailored IT solutions for businesses of
+                all sizes, including startups and small enterprises, ensuring
+                they have the tools and support needed to succeed.
               </div>
             </div>
           </div>
@@ -228,7 +266,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseFive"
               >
-                Do You See Children?
+                What if I Need Hardware, Software, or Specialist Services?
               </button>
             </h2>
             <div
@@ -237,9 +275,9 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Yes! Dr. McCormack is a board certified pediatrician and accepts
-                children of all ages, including infants. He is board certified
-                in both children and adults.
+                Evalaya Tech offers a full range of services, including hardware
+                procurement, software solutions, and specialist IT services. We
+                ensure you have access to the best resources and expertise.
               </div>
             </div>
           </div>
@@ -253,7 +291,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseSix"
               >
-                What if I Need Labs, Imaging, or Specialist Care?
+                Can I Really Contact Evalaya Tech Directly?
               </button>
             </h2>
             <div
@@ -262,9 +300,9 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                We offer discounted labs and imaging but can still bill your
-                insurance for these services, if desired. Should you need to be
-                referred to a specialist, we will be glad to assist you.
+                Yes! Our clients enjoy direct access to our team of experts. You
+                can communicate with us via phone, email, or our dedicated
+                support portal.
               </div>
             </div>
           </div>
@@ -278,7 +316,7 @@
                 aria-expanded="false"
                 aria-controls="flush-collapseSeven"
               >
-                Can I Really Contact Dr. McCormack Directly?
+                Other Questions?
               </button>
             </h2>
             <div
@@ -287,141 +325,176 @@
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Absolutely! This is one of the greatest advantages of the DPC
-                model. He is available via phone, text or email during normal
-                hours as well as after hours.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseEight"
-                aria-expanded="false"
-                aria-controls="flush-collapseEight"
-              >
-                Other Questions?
-              </button>
-            </h2>
-            <div
-              id="flush-collapseEight"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body">
-                Feel free to call or text us at 675-111-0000 or email us at
-                info@perspectivecare.com
+                Our team is here to help. If you have any additional questions,
+                please reach out to us.
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="other-faq container">
-        <div class="q1">
-          <h4>What to Expect as a Perspective Health Member?</h4>
+      <section class="team-section">
+        <div class="container">
+          <h1>Our Team</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card team-card">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="./assets/person1.jpeg"
+                      class="img-fluid"
+                      alt="Profile 1"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">John Doe, CTO</h5>
+                      <p class="card-text">
+                        John has over 15 years of experience in the IT industry.
+                        He has a bachelor's degree in Computer Science from MIT
+                        and a master's degree in Information Technology from
+                        Stanford University. John specializes in software
+                        development, system architecture, and leading innovative
+                        tech projects.
+                      </p>
+                      <button class="btn btn-primary">Contact</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card team-card">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="./assets/person2.jpeg"
+                      class="img-fluid"
+                      alt="Profile 2"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Jane Smith, Lead Developer</h5>
+                      <p class="card-text">
+                        Jane is an expert in full-stack development with a
+                        strong background in both front-end and back-end
+                        technologies. She holds a bachelor's degree in Software
+                        Engineering from UC Berkeley and has led multiple
+                        successful projects in web and mobile application
+                        development.
+                      </p>
+                      <button class="btn btn-primary">Contact</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card team-card">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="./assets/person3.jpeg"
+                      class="img-fluid"
+                      alt="Profile 3"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Michael Johnson, Project Manager
+                      </h5>
+                      <p class="card-text">
+                        Michael has a proven track record of managing
+                        large-scale IT projects. He has a bachelor's degree in
+                        Business Administration from Harvard University and a
+                        PMP certification. Michael excels in project planning,
+                        risk management, and ensuring project delivery on time
+                        and within budget.
+                      </p>
+                      <button class="btn btn-primary">Contact</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card team-card">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="./assets/person4.jpeg"
+                      class="img-fluid"
+                      alt="Profile 4"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Emily Davis, UX/UI Designer</h5>
+                      <p class="card-text">
+                        Emily is a creative and detail-oriented UX/UI designer
+                        with a passion for creating user-friendly and visually
+                        appealing interfaces. She holds a degree in Graphic
+                        Design from the Rhode Island School of Design and has
+                        extensive experience in web and mobile design.
+                      </p>
+                      <button class="btn btn-primary">Contact</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="ans mx-5">
+      </section>
+      <section class="faq-container container">
+        <div class="q1">
+          <h4>What to Expect as an Evalaya Tech Client</h4>
+        </div>
+        <div class="ans">
           <ol>
             <li>
-              Comprehensive exam: Dr. McCormack will conduct a thorough exam to
-              assess your overall health. He will listen to your heart and
-              lungs, check your blood pressure and temperature, and may ask you
-              to perform some simple physical tasks.
+              <strong>Comprehensive Assessment:</strong> Our experts will
+              conduct a thorough assessment of your current IT infrastructure to
+              understand your needs and challenges. This includes evaluating
+              your network, systems, and security measures.
             </li>
             <li>
-              In-depth medical history: Dr. McCormack will ask you about your
-              medical history, including any previous medical conditions,
-              surgeries, medications, and allergies. It's essential to be honest
-              and provide as much detail as possible to help him assess your
-              current health and create a personalized care plan.
+              <strong>In-depth Consultation:</strong> We'll discuss your
+              business goals, existing challenges, and future aspirations to
+              create a customized IT strategy that aligns with your objectives.
             </li>
             <li>
-              Time: You can expect to spend more time with Dr. McCormack during
-              your appointment than you would during a traditional doctor's
-              visit. This is because DPC doctors schedule more extended
-              appointments to ensure they have enough time to discuss your
-              health in-depth.
+              <strong>Time and Attention:</strong> We prioritize our clients,
+              offering extended consultation sessions to ensure we fully
+              understand your needs and can provide the best possible solutions.
             </li>
             <li>
-              Focus on preventative care: At Perspective Health, we focus on
-              preventative care to help keep you healthy and reduce the
-              likelihood of serious medical conditions. Dr. McCormack will
-              discuss lifestyle changes and healthy habits that can help you
-              maintain good health.
+              <strong>Focus on Preventative Measures:</strong> Our proactive
+              approach helps prevent IT issues before they occur, reducing
+              downtime and increasing productivity.
             </li>
             <li>
-              Access to your PCP: You’ll have direct access to Dr. McCormack
-              with the ability to communicate with him and his team via phone,
-              email, or text.
+              <strong>Direct Access to Experts:</strong> You'll have direct
+              access to our team of IT professionals, ensuring you receive
+              timely and effective support.
             </li>
             <li>
-              Coordination of care: If you have any ongoing health conditions or
-              require specialty care, Dr. McCormack will help coordinate your
-              care with other healthcare providers to ensure you receive the
-              best possible care.
+              <strong>Coordination of Services:</strong> If you require
+              additional services or specialist support, we coordinate
+              seamlessly to provide comprehensive care for your IT needs.
             </li>
           </ol>
-          <li style="list-style: none">
+          <p>
             Overall, you can expect a more personalized and comprehensive
-            approach to healthcare when you’re a Perspective Health member. Dr.
-            McCormack will take the time to get to know you and your health
-            needs, leading to better health outcomes.
-          </li>
-        </div>
-      </section>
-      <section class="workers">
-        <div class="container">
-          <div class="mb-5"><h1 style="text-align: center">Our Nurses</h1></div>
-          <div class="card mx-5">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./nurse1.avif" class="img-fluid" alt="Profile 1" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Ambre' Pownall, MSN, RN, APRN</h5>
-                  <p class="card-text">
-                    Ambre’ was born and raised in Wynne, Arkansas. He has a
-                    bachelor’s degree in nursing from the University of Arkansas
-                    and a master’s degree in nursing as a pediatric nurse
-                    practitioner from Northern Kentucky University. He spent 10
-                    years in the Department of Neurosurgery at Arkansas
-                    Children’s Hospital before transitioning in to healthcare
-                    administration as a service line director and most recently
-                    as family medicine clinic practice administrator.
-                  </p>
-                  <button class="btn btn-primary">Contact</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card mx-5">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./nurse2.avif" class="img-fluid" alt="Profile 2" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Leslie, McCormack, MSN, RN, APRN</h5>
-                  <p class="card-text">
-                    Leslie was born and raised in Wynne, Arkansas. She has a
-                    bachelor’s degree in nursing from the University of Arkansas
-                    and a master’s degree in nursing as a pediatric nurse
-                    practitioner from Northern Kentucky University. She spent 10
-                    years in the Department of Neurosurgery at Arkansas
-                    Children’s Hospital before transitioning in to healthcare
-                    administration as a service line director and most recently
-                    as family medicine clinic practice administrator.
-                  </p>
-                  <button class="btn btn-primary">Contact</button>
-                </div>
-              </div>
-            </div>
-          </div>
+            approach to IT services when you're an Evalaya Tech client. Our team
+            will take the time to get to know your business and technology
+            needs, leading to better outcomes and greater efficiency.
+          </p>
         </div>
       </section>
     </main>
@@ -559,5 +632,11 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

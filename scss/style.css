@@ -72,7 +72,7 @@ section .slide .carousel-inner .bgImage {
   position: relative;
   height: 80vh;
   background-size: cover;
-  background-image: url("./assets/caraouselImage1.jpeg");
+  background-image: url("../assets/caraouselImage1.jpeg");
 }
 section .slide .carousel-inner .bgImage::before {
   content: "";
@@ -122,10 +122,8 @@ footer {
 
 main .abt {
   height: 100vh;
-  background: url(./about.jpg);
+  background: url(../assets/aboutus.jpeg) no-repeat center center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   position: relative;
   display: flex;
   justify-content: center;
@@ -148,9 +146,9 @@ main .abt .abt-content {
   letter-spacing: 0.01em;
   margin: 0 10rem;
   color: #fff;
+  text-align: center;
 }
 main .abt .abt-content h2 {
-  text-align: center;
   margin: 2rem 0;
   font-size: calc(3.6vw + 1rem);
 }
@@ -172,6 +170,124 @@ main .other-faq .q1 {
 main .other-faq .ans li {
   margin-bottom: 2rem;
   line-height: 1.5rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  main .abt .abt-content {
+    margin: 0 5rem;
+  }
+}
+@media (max-width: 992px) {
+  main .abt .abt-content {
+    margin: 0 2rem;
+  }
+}
+@media (max-width: 768px) {
+  main .abt {
+    height: auto;
+    padding: 5rem 0;
+  }
+  main .abt .abt-content {
+    margin: 0 1rem;
+  }
+  main .abt .abt-content h2 {
+    font-size: calc(3vw + 1rem);
+  }
+  .accordion .accordion-title h3 {
+    font-size: calc(1.8vw + 1rem);
+  }
+  .other-faq .ans li {
+    line-height: 1.4rem;
+  }
+}
+@media (max-width: 576px) {
+  main .abt {
+    padding: 3rem 0;
+  }
+  main .abt .abt-content h2 {
+    font-size: calc(2.4vw + 1rem);
+  }
+  .accordion .accordion-title h3 {
+    font-size: calc(1.2vw + 1rem);
+  }
+  .other-faq .ans li {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+}
+.faq-container {
+  padding: 4rem 2rem !important;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+.faq-container h4 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+.faq-container ol {
+  padding-left: 1.2rem;
+}
+.faq-container i {
+  margin-bottom: 0.75rem;
+}
+.faq-container li {
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.faq-container li strong {
+  color: #0056b3;
+}
+.faq-container p {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  line-height: 1.6;
+}
+
+.team-section {
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+}
+.team-section h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.team-card {
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.team-card img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team-card .card-body {
+  padding: 1.5rem;
+}
+.team-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #0056b3;
+}
+.team-card .card-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+.team-card .btn-primary {
+  margin-top: 1rem;
 }
 
 .slider .bgImage .carousel_caption {
