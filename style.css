@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Newsreader", serif;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
@@ -38,7 +37,6 @@ section.last {
 }
 
 header {
-  height: 20vh;
   position: relative;
   z-index: 999;
 }
@@ -56,10 +54,11 @@ header .navigation .ctd ul {
 header .navigation .ctd ul li a {
   color: #fff;
 }
-header .navg {
-  height: 12vh;
+header nav {
+  width: 1200px;
+  margin: 0 auto;
 }
-header .navg img {
+header nav img {
   width: 50px;
   height: auto !important;
 }

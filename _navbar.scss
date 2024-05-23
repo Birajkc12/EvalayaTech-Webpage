@@ -1,5 +1,4 @@
 header {
-  height: 20vh;
   .navigation {
     background-color: #593759;
     color: #fff;
@@ -17,15 +16,17 @@ header {
       }
     }
   }
-  .navg {
-    height: 12vh;
+
+  position: relative;
+  z-index: 999;
+  nav {
+    width: 1200px;
+    margin: 0 auto;
     img {
       width: 50px;
       height: auto !important;
     }
   }
-  position: relative;
-  z-index: 999;
 }
 @media (max-width: 767px) {
   .navigation {
