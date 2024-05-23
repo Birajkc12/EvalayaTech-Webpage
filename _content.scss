@@ -1,49 +1,62 @@
-section{
-   .slide{
-    .carousel-inner{
-        .bgImage{
-            height: 80vh;
-            background-size: cover;
-            background-image: url("./pexels-yogendra-singh-731504.jpg");
+section {
+  .slide {
+    .carousel-inner {
+      .bgImage {
+        position: relative;
+        height: 80vh;
+        background-size: cover;
+        background-image: url("./assets/caraouselImage1.jpeg");
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 1;
         }
-            
-        } }
-   }
-   .container{
-    .row{
-        .form{
-            input,textarea{
-                padding: 10px;
-            }
-            .my-btn:hover{
-                background-color: #007bff;
-                border-color: #007bff;
-                
-            }
+        .carousel_caption {
+          position: relative;
+          z-index: 2;
+          color: #fff;
         }
-        .reSize{
-            img{
-                height: 500px;
-                width: 100%;
-                object-fit: cover;
-            }
-        }
-        .card{
-            h2{
-                font-size: 1.3rem;
-            }
-        }
-        
+      }
     }
-    .custom{
-        li{
-            list-style: none;
-            background-image: url("./love-removebg-preview.png");
-            background-repeat: no-repeat;
-            background-size: 30px;
-            padding-left: 50px;
-        }
-       
-      
+  }
+}
+.container {
+  .row {
+    .form {
+      input,
+      textarea {
+        padding: 10px;
+      }
+      .my-btn:hover {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
     }
-   }
+    .reSize {
+      img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .card {
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .custom {
+    li {
+      list-style: none;
+      background-image: url("./assets/love-removebg-preview.png");
+      background-repeat: no-repeat;
+      background-size: 30px;
+      padding-left: 50px;
+    }
+  }
+}

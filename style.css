@@ -38,9 +38,11 @@ section.last {
 
 header {
   height: 20vh;
+  position: relative;
+  z-index: 999;
 }
 header .navigation {
-  background-color: #162a4a;
+  background-color: #593759;
   color: #fff;
 }
 header .navigation .ctd {
@@ -56,6 +58,10 @@ header .navigation .ctd ul li a {
 header .navg {
   height: 12vh;
 }
+header .navg img {
+  width: 50px;
+  height: auto !important;
+}
 
 @media (max-width: 767px) {
   .navigation {
@@ -63,12 +69,29 @@ header .navg {
   }
 }
 section .slide .carousel-inner .bgImage {
+  position: relative;
   height: 80vh;
   background-size: cover;
-  background-image: url("./pexels-yogendra-singh-731504.jpg");
+  background-image: url("./assets/caraouselImage1.jpeg");
+}
+section .slide .carousel-inner .bgImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+section .slide .carousel-inner .bgImage .carousel_caption {
+  position: relative;
+  z-index: 2;
+  color: #fff;
 }
 
-.container .row .form input, .container .row .form textarea {
+.container .row .form input,
+.container .row .form textarea {
   padding: 10px;
 }
 .container .row .form .my-btn:hover {
@@ -78,14 +101,15 @@ section .slide .carousel-inner .bgImage {
 .container .row .reSize img {
   height: 500px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container .row .card h2 {
   font-size: 1.3rem;
 }
 .container .custom li {
   list-style: none;
-  background-image: url("./love-removebg-preview.png");
+  background-image: url("./assets/love-removebg-preview.png");
   background-repeat: no-repeat;
   background-size: 30px;
   padding-left: 50px;
@@ -115,7 +139,8 @@ main .abt::before {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 main .abt .abt-content {
   position: relative;
@@ -181,7 +206,8 @@ main .other-faq .ans li {
     top: 20%;
     left: 15%;
     width: 250px;
+    position: relative;
+    z-index: 2;
+    color: #fff;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
