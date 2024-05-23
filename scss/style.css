@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader&family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+header li {
+  list-style: none;
+}
+header li a {
+  text-decoration: none;
+  color: black;
+}
+header li a:hover {
+  text-decoration: underline;
+}
+
+section.content {
+  margin: 80px 0;
+}
+
+section:nth-child(even) {
+  background-color: #f2f2f2; /* grey color */
+  padding: 80px 0;
+}
+
+section:nth-child(odd) {
+  background-color: #fff; /* white color */
+  padding: 80px 0;
+}
+
+section.last {
+  margin: 0;
+}
+
+header {
+  position: relative;
+  z-index: 999;
+}
+header .navigation {
+  background-color: #593759;
+  color: #fff;
+}
+header .navigation .ctd {
+  height: 8vh;
+}
+header .navigation .ctd ul {
+  padding: 0;
+  margin: 0;
+}
+header .navigation .ctd ul li a {
+  color: #fff;
+}
+header nav {
+  width: 1200px;
+  margin: 0 auto;
+}
+header nav img {
+  width: 50px;
+  height: auto !important;
+}
+
+@media (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
+section .slide .carousel-inner .bgImage {
+  position: relative;
+  height: 80vh;
+  background-size: cover;
+  background-image: url("./assets/caraouselImage1.jpeg");
+}
+section .slide .carousel-inner .bgImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+section .slide .carousel-inner .bgImage .carousel_caption {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.container .row .form input,
+.container .row .form textarea {
+  padding: 10px;
+}
+.container .row .form .my-btn:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.container .row .reSize img {
+  height: 500px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .row .card h2 {
+  font-size: 1.3rem;
+}
+.container .custom li {
+  list-style: none;
+  background-image: url("./assets/love-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  padding-left: 50px;
+}
+
+footer {
+  background-color: #162a4a;
+  color: #fff;
+}
+
+main .abt {
+  height: 100vh;
+  background: url(./about.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .abt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+main .abt .abt-content {
+  position: relative;
+  line-height: 1.5em;
+  letter-spacing: 0.01em;
+  margin: 0 10rem;
+  color: #fff;
+}
+main .abt .abt-content h2 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: calc(3.6vw + 1rem);
+}
+main .accordion {
+  background-color: #fff;
+}
+main .accordion .accordion-title {
+  text-align: center;
+}
+main .accordion .accordion-title h3 {
+  color: hsl(140.7692307692, 13.1313131313%, 61.176%);
+  line-height: 1.2012;
+  font-size: calc(2.28vw + 1rem);
+}
+main .other-faq .q1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main .other-faq .ans li {
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+.slider .bgImage .carousel_caption {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 520px;
+}
+.slider .bgImage .carousel_caption h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #ffffff;
+}
+.slider .bgImage .carousel_caption p {
+  color: #fff;
+  font-size: 1rem;
+}
+@media (max-width: 767px) {
+  .slider .bgImage .carousel_caption h2 {
+    font-size: 1.5rem;
+  }
+  .slider .bgImage .carousel_caption p {
+    font-size: 0.5rem;
+  }
+}
+.slider .bgImage .carousel_caption .btn {
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .slider .bgImage .carousel_caption {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 250px;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+}/*# sourceMappingURL=style.css.map */
