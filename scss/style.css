@@ -290,6 +290,125 @@ main .other-faq .ans li {
   margin-top: 1rem;
 }
 
+.consultation-button button {
+  padding: 10px 20px;
+  border: none !important;
+  border-radius: 7px;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.consultation-button button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services .service-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.services .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.services .card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 300px;
+  text-align: center;
+}
+.services .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.services .card-icon {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  font-size: 40px;
+}
+.services .card-content {
+  padding: 20px;
+}
+.services .card-content h3 {
+  margin: 0 0 10px;
+  color: #333;
+}
+.services .card-content h3 p {
+  color: #666;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .services .card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+.testimonial-card h3 {
+  margin: 0 0 10px;
+  color: #333;
+}
+.testimonial-card p {
+  color: #666;
+  margin: 0;
+}
+
+.testimonial-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+}
+.testimonial-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+.testimonial-section h4 {
+  color: #593759;
+  margin: 10px 0;
+}
+
+.testimonial-photo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+}
+
 .slider .bgImage .carousel_caption {
   position: absolute;
   top: 20%;
